@@ -1,7 +1,8 @@
 # Architecture
+![architecture](https://github.com/user-attachments/assets/d2648ba4-8bb5-4b8c-b2b1-d89d79c4ee7f)
 
-:heavy_check_mark:_(COMMENT) Add a description of the architecture of your application and create a diagram like the one below. Link to the diagram in this document._
-
-![eShopOnContainers Architecture](https://docs.microsoft.com/en-us/dotnet/architecture/cloud-native/media/eshoponcontainers-development-architecture.png)
-
-[Source](https://docs.microsoft.com/en-us/dotnet/architecture/cloud-native/introduce-eshoponcontainers-reference-app)
+## Uitleg
+### Syncroon
+De drie Services kunnen met elkaar communiceren via OpenFeign op een syncrone manier.
+### Asyncroon
+De drie Services kunnen zich aanmelden bij de eventbus door RabbitMQ.
